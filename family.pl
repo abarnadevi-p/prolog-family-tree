@@ -21,3 +21,4 @@ mother(X,Y) :- parent(X,Y), female(X).
 grandparent(X,Y) :- parent(X,Z), parent(Z,Y).
 grandfather(X,Y) :- grandparent(X,Y), male(X).
 sibling(X,Y) :- parent(Z,X), parent(Z,Y), X \= Y.
+sister(X,Y) :- parent(Z,X), parent(Z,Y), female(X). 
